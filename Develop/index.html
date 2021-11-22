@@ -25,42 +25,140 @@
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p class="lead text-center">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container border-bottom mb-0">
+    <div class="container border-botttom">
       <!-- Timeblocks go here -->
-      <div class="row m-0 p-0">
-        <div class="col-2 m-0 p-0">
+      <!-- 9AM -->
+      <div class="row h-100 m-0" style="height: 100px">
+        <div class="col-2 p-0">
           <p class="border-top border-end">9AM</p>
         </div>
-        <div class="col-8 m-0 p-0">
-          <textarea></textarea>        
+        <div class="col-9 p-0">
+          <textarea class="h-100 w-100 d-inline-block"></textarea>        
         </div>
-        <div class="col-2 m-0 p-0">
-          <button type="button" class="saveBtn p-1 m-0"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="60" height="60"
-            viewBox="0 0 172 172"
-            style=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M34.4,22.93333c-6.33533,0 -11.46667,5.13133 -11.46667,11.46667v103.2c0,6.33533 5.13133,11.46667 11.46667,11.46667h103.2c6.33533,0 11.46667,-5.13133 11.46667,-11.46667v-91.73333l-22.93333,-22.93333h-11.46667v34.4c0,3.1648 -2.56853,5.73333 -5.73333,5.73333h-51.6c-3.1648,0 -5.73333,-2.56853 -5.73333,-5.73333v-34.4zM91.73333,22.93333v28.66667h11.46667v-28.66667zM57.33333,91.73333h57.33333c6.33533,0 11.46667,5.13133 11.46667,11.46667v34.4h-80.26667v-34.4c0,-6.33533 5.13133,-11.46667 11.46667,-11.46667z"></path></g><path d="" fill="none"></path></g></g></svg></button>
-        </div>
+        <div class="col-1 p-0">
+          <button type="button" class="saveBtn h-100 w-100 d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
+            <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/>
+          </svg></button>
+          </div>
       </div>
-      <div class="row m-0 p-0 ">
-        <div class="col-2 m-0 p-0">
+      <!-- 10AM -->
+      <div class="row h-100 m-0">
+        <div class="col-2 p-0">
           <p class="border-top border-end">10AM</p>
         </div>
-        <div class="col-8 m-0 p-0">
-          <textarea></textarea>
+        <div class="col-9 p-0">
+          <textarea class="h-100 w-100 d-inline-block"></textarea>
         </div>
-        <div class="col-2 m-0 p-0">
-          <button type="button" class="saveBtn p-1 m-0"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="60" height="60"
-            viewBox="0 0 172 172"
-            style=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M34.4,22.93333c-6.33533,0 -11.46667,5.13133 -11.46667,11.46667v103.2c0,6.33533 5.13133,11.46667 11.46667,11.46667h103.2c6.33533,0 11.46667,-5.13133 11.46667,-11.46667v-91.73333l-22.93333,-22.93333h-11.46667v34.4c0,3.1648 -2.56853,5.73333 -5.73333,5.73333h-51.6c-3.1648,0 -5.73333,-2.56853 -5.73333,-5.73333v-34.4zM91.73333,22.93333v28.66667h11.46667v-28.66667zM57.33333,91.73333h57.33333c6.33533,0 11.46667,5.13133 11.46667,11.46667v34.4h-80.26667v-34.4c0,-6.33533 5.13133,-11.46667 11.46667,-11.46667z"></path></g><path d="" fill="none"></path></g></g></svg></button>
+        <div class="col-1 p-0">
+          <button type="button" class="saveBtn h-100 w-100 d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
+            <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/>
+          </svg></button>
+          </div>
+      </div>
+      <!-- 11AM -->
+      <div class="row h-100 m-0">
+        <div class="col-2 p-0">
+          <p class="border-top border-end">11AM</p>
         </div>
+        <div class="col-9 p-0">
+          <textarea class="h-100 w-100 d-inline-block"></textarea>
+        </div>
+        <div class="col-1 p-0">
+          <button type="button" class="saveBtn h-100 w-100 d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
+            <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/>
+          </svg></button>
+          </div>
+      </div>
+      <!-- 12PM -->
+      <div class="row h-100 m-0">
+        <div class="col-2 p-0">
+          <p class="border-top border-end">12PM</p>
+        </div>
+        <div class="col-9 p-0">
+          <textarea class="h-100 w-100 d-inline-block"></textarea>
+        </div>
+        <div class="col-1 p-0">
+          <button type="button" class="saveBtn h-100 w-100 d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
+            <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/>
+          </svg></button>
+          </div>
+      </div>
+      <!-- 1PM -->
+      <div class="row h-100 m-0">
+        <div class="col-2 p-0">
+          <p class="border-top border-end">1PM</p>
+        </div>
+        <div class="col-9 p-0">
+          <textarea class="h-100 w-100 d-inline-block"></textarea>
+        </div>
+        <div class="col-1 p-0">
+          <button type="button" class="saveBtn h-100 w-100 d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
+            <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/>
+          </svg></button>
+          </div>
+      </div>
+      <!-- 2PM -->
+      <div class="row h-100 m-0">
+        <div class="col-2 p-0">
+          <p class="border-top border-end">2PM</p>
+        </div>
+        <div class="col-9 p-0">
+          <textarea class="h-100 w-100 d-inline-block"></textarea>
+        </div>
+        <div class="col-1 p-0">
+          <button type="button" class="saveBtn h-100 w-100 d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
+            <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/>
+          </svg></button>
+          </div>
+      </div>
+      <!-- 3PM -->
+      <div class="row h-100 m-0">
+        <div class="col-2 p-0">
+          <p class="border-top border-end">3PM</p>
+        </div>
+        <div class="col-9 p-0">
+          <textarea class="h-100 w-100 d-inline-block"></textarea>
+        </div>
+        <div class="col-1 p-0">
+          <button type="button" class="saveBtn h-100 w-100 d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
+            <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/>
+          </svg></button>
+          </div>
+      </div>
+      <!-- 4PM -->
+      <div class="row h-100 m-0">
+        <div class="col-2 p-0">
+          <p class="border-top border-end">4PM</p>
+        </div>
+        <div class="col-9 p-0">
+          <textarea class="h-100 w-100 d-inline-block"></textarea>
+        </div>
+        <div class="col-1 p-0">
+          <button type="button" class="saveBtn h-100 w-100 d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
+            <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/>
+          </svg></button>
+          </div>
+      </div>
+      <!-- 5PM -->
+      <div class="row h-100 m-0">
+        <div class="col-2 p-0">
+          <p class="border-top border-end">5PM</p>
+        </div>
+        <div class="col-9 p-0">
+          <textarea class="h-100 w-100 d-inline-block"></textarea>
+        </div>
+        <div class="col-1 p-0">
+          <button type="button" class="saveBtn h-100 w-100 d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
+            <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/>
+          </svg></button>
+          </div>
       </div>
 
     </div>
-    
+    <footer>Made in USA</footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
