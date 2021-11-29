@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -36,7 +36,7 @@
           <p class="border-top border-end">9AM</p>
         </div>
         <div class="col-9 p-0">
-          <textarea class="h-100 w-100 d-inline-block"></textarea>        
+          <textarea id="text1" class="h-100 w-100 d-inline-block border-2 border-white"></textarea>        
         </div>
         <div class="col-1 p-0">
           <button type="button" class="saveBtn h-100 w-100 d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
@@ -50,7 +50,7 @@
           <p class="border-top border-end">10AM</p>
         </div>
         <div class="col-9 p-0">
-          <textarea class="h-100 w-100 d-inline-block"></textarea>
+          <textarea id="text2" class="h-100 w-100 d-inline-block border-2 border-white"></textarea>
         </div>
         <div class="col-1 p-0">
           <button type="button" class="saveBtn h-100 w-100 d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
@@ -64,7 +64,7 @@
           <p class="border-top border-end">11AM</p>
         </div>
         <div class="col-9 p-0">
-          <textarea class="h-100 w-100 d-inline-block"></textarea>
+          <textarea id="text3" class="h-100 w-100 d-inline-block border-2 border-white"></textarea>
         </div>
         <div class="col-1 p-0">
           <button type="button" class="saveBtn h-100 w-100 d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
@@ -78,7 +78,7 @@
           <p class="border-top border-end">12PM</p>
         </div>
         <div class="col-9 p-0">
-          <textarea class="h-100 w-100 d-inline-block"></textarea>
+          <textarea id="text4" class="h-100 w-100 d-inline-block border-2 border-white"></textarea>
         </div>
         <div class="col-1 p-0">
           <button type="button" class="saveBtn h-100 w-100 d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
@@ -92,7 +92,7 @@
           <p class="border-top border-end">1PM</p>
         </div>
         <div class="col-9 p-0">
-          <textarea class="h-100 w-100 d-inline-block"></textarea>
+          <textarea id="text5" class="h-100 w-100 d-inline-block border-2 border-white"></textarea>
         </div>
         <div class="col-1 p-0">
           <button type="button" class="saveBtn h-100 w-100 d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
@@ -106,7 +106,7 @@
           <p class="border-top border-end">2PM</p>
         </div>
         <div class="col-9 p-0">
-          <textarea class="h-100 w-100 d-inline-block"></textarea>
+          <textarea id="text6" class="h-100 w-100 d-inline-block border-2 border-white"></textarea>
         </div>
         <div class="col-1 p-0">
           <button type="button" class="saveBtn h-100 w-100 d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
@@ -120,7 +120,7 @@
           <p class="border-top border-end">3PM</p>
         </div>
         <div class="col-9 p-0">
-          <textarea class="h-100 w-100 d-inline-block"></textarea>
+          <textarea id="text7" class="h-100 w-100 d-inline-block border-2 border-white"></textarea>
         </div>
         <div class="col-1 p-0">
           <button type="button" class="saveBtn h-100 w-100 d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
@@ -134,7 +134,7 @@
           <p class="border-top border-end">4PM</p>
         </div>
         <div class="col-9 p-0">
-          <textarea class="h-100 w-100 d-inline-block"></textarea>
+          <textarea id="text8" class="h-100 w-100 d-inline-block border-2 border-white"></textarea>
         </div>
         <div class="col-1 p-0">
           <button type="button" class="saveBtn h-100 w-100 d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
@@ -148,7 +148,7 @@
           <p class="border-top border-end">5PM</p>
         </div>
         <div class="col-9 p-0">
-          <textarea class="h-100 w-100 d-inline-block"></textarea>
+          <textarea id="text9" class="h-100 w-100 d-inline-block border-2 border-white"></textarea>
         </div>
         <div class="col-1 p-0">
           <button type="button" class="saveBtn h-100 w-100 d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
@@ -158,8 +158,11 @@
       </div>
 
     </div>
-    <footer>Made in USA</footer>
+    <footer class="border-2 border-top border-secondary">
+      <p class ="text-center m-3"></p>
+    </footer>
 
+    <script src="./assets/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
